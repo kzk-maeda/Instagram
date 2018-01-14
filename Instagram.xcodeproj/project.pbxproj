@@ -71,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				B3D72DA4200B925500CBDB34 /* AppDelegate.swift */,
-				B3D72DC6200B96A700CBDB34 /* Post Screen */,
+				B3D72DA6200B925500CBDB34 /* ViewController.swift */,
+				B3D72DC2200B968B00CBDB34 /* PostTableViewCell.swift */,
+				B3D72DC3200B968B00CBDB34 /* PostTableViewCell.xib */,
 				B3D72DA8200B925500CBDB34 /* Main.storyboard */,
 				B3D72DAB200B925500CBDB34 /* Assets.xcassets */,
 				B3D72DAD200B925500CBDB34 /* LaunchScreen.storyboard */,
@@ -84,16 +86,6 @@
 				B3D72DB0200B925500CBDB34 /* Info.plist */,
 			);
 			path = Instagram;
-			sourceTree = "<group>";
-		};
-		B3D72DC6200B96A700CBDB34 /* Post Screen */ = {
-			isa = PBXGroup;
-			children = (
-				B3D72DA6200B925500CBDB34 /* ViewController.swift */,
-				B3D72DC2200B968B00CBDB34 /* PostTableViewCell.swift */,
-				B3D72DC3200B968B00CBDB34 /* PostTableViewCell.xib */,
-			);
-			path = "Post Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

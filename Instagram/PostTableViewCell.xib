@@ -57,13 +57,19 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJI-Gi-D6Q">
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJI-Gi-D6Q" customClass="DesignableButton">
                         <rect key="frame" x="8" y="261.5" width="83" height="30"/>
                         <state key="normal" title="😀 23 Likes"/>
+                        <connections>
+                            <action selector="likeButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HbH-ro-mMv"/>
+                        </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-ag-evz">
-                        <rect key="frame" x="99" y="261" width="120" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-ag-evz" customClass="DesignableButton">
+                        <rect key="frame" x="99" y="259" width="120" height="30"/>
                         <state key="normal" title="Comment"/>
+                        <connections>
+                            <action selector="commentButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="m9j-b2-Bv5"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -97,6 +103,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentButton" destination="TTe-ag-evz" id="JwB-Tv-tXd"/>
+                <outlet property="createdAt" destination="hzP-sr-faC" id="LbN-93-mfY"/>
+                <outlet property="likeButton" destination="DJI-Gi-D6Q" id="vzw-I1-RhQ"/>
+                <outlet property="postImage" destination="rAI-ks-uH9" id="3da-sy-Svq"/>
+                <outlet property="postText" destination="j1G-yZ-0pz" id="CC9-th-4pg"/>
+                <outlet property="userNameLabel" destination="xak-NC-Eor" id="DV4-BQ-B1t"/>
+                <outlet property="userProfilePic" destination="pfP-fF-HQj" id="M19-nd-u7f"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
